@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #626262;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  height: 5000px;
+  background-color: white;
+}
+
+header {
+  display: flex;
+  margin-top: 165px;
+  margin-bottom: 95px;
+  justify-content: center;
+}
+
+#main-content {
+  margin-left: 150px;
+}
+
+.block {
+
+}
