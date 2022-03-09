@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap')
+*
+		padding: 0
+		margin: 0
+		box-sizing: border-box
+		color: #626262
+		font-family: 'Ubuntu', sans-serif
+
+
+a
+		text-decoration: none
+		
+.inside
+		list-style-position: inside
+		
+.block
+		margin-bottom: 25px
+	
+.font-blur
+		color: #B8B2A4
+		
+figcaption
+		position: relative
+		width: 90%
+		margin-right: auto
+		margin-left: auto
+		margin-top: 25px
+		font-style: italic
+		
+.font-h1
+		font-size: xx-large
+		
+.font-h2
+	font-size: x-large
+	
+.social
+		display: flex
+		>*
+				margin-right: 15px
+
+body
+		display: flex
+		flex-direction: column
+		height: 5000px
+		background-color: #FFFFFF
+		align-items: center
+		width: 90vw
+		margin-right: auto
+		margin-left: auto
+		
+		header
+				margin-top: 100px
+				margin-bottom: 95px
+
+
+		#main-content
+				display: grid
+				grid-template-rows: auto
+				grid-template-columns: 661px min-content
+				width: 1062px
+
+				.main
+						grid-column: 1
+						
+						.share
+								float: right
+								margin-top: 80px
+								margin-bottom: 105px
+								
+		
+				aside
+						grid-column: 2
+						margin-left: 100px
+						
+						.block
+								margin-bottom: 10px
+								
+						.top-post
+								margin-top: 50px
+								margin-bottom: 50px
+								
+								ul
+										margin-top: 25px
+										
+										.post
+												margin-top: 20px
+												
+												span
+														margin-left: 20px
+				
+		.also-like
+				display: flex
+				flex-direction: column
+				background-color: #F5F5F5
+				width: 98.8vw
+				padding: 100px 10vw
+				
+				
+				span
+						margin-bottom: 40px
+						
+				nav
+						display: flex
+						justify-content: space-between
+						a
+								display: flex
+								flex-direction: column
+								
+								img
+										margin-bottom: 20px
+		.comments
+				margin-top: 100px
+				width: 1062px
+				
+				.comment
+						display: flex
+						margin-top: 25px
+						img
+								margin-right: 30px
+						.comment-content
+								display: flex
+								flex-direction: column
+								justify-content: space-between
+								.comment-nick
+										margin-bottom: 10px
+										
+								.comment-text
+										margin-bottom: 30px
+										
+								>*
+										margin-bottom: 5px
+										
+				.blank-comment
+						margin-top: 25px
+						display: flex
+						img
+								margin-right: 30px
+						form
+								width: 100%
+								textarea[name="comment"]
+										resize: none
+										padding: 5px
+										height: 100%
+										width: 100%
+										border: solid 1px #B8B2A4
+										border-radius: 5px
+										outline: none
+				.connect
+						margin-top: 40px
+						float: right

@@ -1,24 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 * {
 		padding: 0;
 		margin: 0;
 		box-sizing: border-box;
 		color: #626262;
+		font-family: "Ubuntu", sans-serif;
 }
 
-#main {
+a {
+		text-decoration: none;
+}
+
+.inside {
+		list-style-position: inside;
+}
+
+.block {
+		margin-bottom: 25px;
+}
+
+.font-blur {
+		color: #B8B2A4;
+}
+
+figcaption {
+		position: relative;
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 25px;
+		font-style: italic;
+}
+
+.font-h1 {
+		font-size: xx-large;
+}
+
+.font-h2 {
+		font-size: x-large;
+}
+
+.social {
+		display: flex;
+}
+.social > * {
+		margin-right: 15px;
+}
+
+body {
 		display: flex;
 		flex-direction: column;
 		height: 5000px;
-		background-color: white;
+		background-color: #FFFFFF;
+		align-items: center;
+		width: 90vw;
+		margin-right: auto;
+		margin-left: auto;
 }
-
-header {
-		display: flex;
-		margin-top: 165px;
+body header {
+		margin-top: 100px;
 		margin-bottom: 95px;
-		justify-content: center;
 }
-
-#main-content {
-		margin-left: 150px;
+body #main-content {
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: 661px min-content;
+		width: 1062px;
+}
+body #main-content .main {
+		grid-column: 1;
+}
+body #main-content .main .share {
+		float: right;
+		margin-top: 80px;
+		margin-bottom: 105px;
+}
+body #main-content aside {
+		grid-column: 2;
+		margin-left: 100px;
+}
+body #main-content aside .block {
+		margin-bottom: 10px;
+}
+body #main-content aside .top-post {
+		margin-top: 50px;
+		margin-bottom: 50px;
+}
+body #main-content aside .top-post ul {
+		margin-top: 25px;
+}
+body #main-content aside .top-post ul .post {
+		margin-top: 20px;
+}
+body #main-content aside .top-post ul .post span {
+		margin-left: 20px;
+}
+body .also-like {
+		display: flex;
+		flex-direction: column;
+		background-color: #F5F5F5;
+		width: 98.8vw;
+		padding: 100px 10vw;
+}
+body .also-like span {
+		margin-bottom: 40px;
+}
+body .also-like nav {
+		display: flex;
+		justify-content: space-between;
+}
+body .also-like nav a {
+		display: flex;
+		flex-direction: column;
+}
+body .also-like nav a img {
+		margin-bottom: 20px;
+}
+body .comments {
+		margin-top: 100px;
+		width: 1062px;
+}
+body .comments .comment {
+		display: flex;
+		margin-top: 25px;
+}
+body .comments .comment img {
+		margin-right: 30px;
+}
+body .comments .comment .comment-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+}
+body .comments .comment .comment-content .comment-nick {
+		margin-bottom: 10px;
+}
+body .comments .comment .comment-content .comment-text {
+		margin-bottom: 30px;
+}
+body .comments .comment .comment-content > * {
+		margin-bottom: 5px;
+}
+body .comments .blank-comment {
+		margin-top: 25px;
+		display: flex;
+}
+body .comments .blank-comment img {
+		margin-right: 30px;
+}
+body .comments .blank-comment form {
+		width: 100%;
+}
+body .comments .blank-comment form textarea[name=comment] {
+		resize: none;
+		padding: 5px;
+		height: 100%;
+		width: 100%;
+		border: solid 1px #B8B2A4;
+		border-radius: 5px;
+		outline: none;
+}
+body .comments .connect {
+		margin-top: 40px;
+		float: right;
 }
